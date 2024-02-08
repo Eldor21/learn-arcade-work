@@ -2,6 +2,7 @@ print("hello Zarafshan")
 print("Why Zarafshan instead of World.")
 print()
 
+print("Hello, Zarafshan\nWhy Zarafshan\tinstead of World.")
 
 print()
 print("""Isn't it lovely, all alone?
