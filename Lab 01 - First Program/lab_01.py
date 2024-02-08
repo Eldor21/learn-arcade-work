@@ -1,4 +1,5 @@
 Hello, Barcelonaprint("Hello, Barcelona")
+print("Hello, Barcelona")
 print("Why Barcelona instead of World.")
 print()
 
