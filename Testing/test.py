@@ -1,3 +1,3 @@
-print("hello word!")
-print("I love barcelona")
-print("I need a lot of Money \nWho can give me")
+def print_hello():
+    """"this is a comment that describes a function"""
+    print("Hello")
