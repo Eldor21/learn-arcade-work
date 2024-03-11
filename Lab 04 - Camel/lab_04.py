@@ -1,3 +1,9 @@
+"""Summer 2030.
+As a seasoned horseman on a tranquil farm, your routine takes a harrowing turn
+when unsettling reports of a zombie virus echo through the radio.
+Investigating strange noises in the stables, you encounter the undead.
+Swiftly mounting a trusty steed, you embark on a perilous 200-mile journey to the nearest town,
+where the unfolding saga of survival in a zombie-infested world begins."""
 import random
 
 
