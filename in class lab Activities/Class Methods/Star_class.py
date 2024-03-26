@@ -3,7 +3,7 @@ class Star:
         self.get_name = name
         print("A star is born! It's name is" + name)
     def get_name(self):
-        print("A star is born! It's name is" + name)
+        print("A star is born! It's name is" + self.get_name)
 star1 = Star(" Zuxro")
 star2 = Star(" Mars")
 class Monster:
