@@ -1,0 +1,36 @@
+{
+    "Map/SizeTest": {
+        "height": 4300,
+        "width": 2
+    },
+    "activeFile": "",
+    "expandedProjectPaths": [
+    ],
+    "fileStates": {
+        "Lab043024.tsj": {
+            "dynamicWrapping": true
+        },
+        "untitled.tmj": {
+            "scale": 0.185546875,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 962.0210526315789,
+                "y": 644.042105263158
+            }
+        }
+    },
+    "last.imagePath": "/Users/eldorabdukhakimov/Documents/GitHub/learn-arcade-work/Lab 12 - Final Lab/Platformer Art Complete Pack/Base pack/Items",
+    "map.lastUsedFormat": "json",
+    "map.renderOrder": "1",
+    "map.tileHeight": 64,
+    "map.tileWidth": 64,
+    "openFiles": [
+    ],
+    "project": "Lab0430.tiled-project",
+    "property.type": "string",
+    "recentFiles": [
+        "untitled.tmj"
+    ],
+    "tileset.lastUsedFormat": "json",
+    "tileset.type": 1
+}
