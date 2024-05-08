@@ -3,19 +3,25 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "",
+    "activeFile": "untitled.tmj",
     "expandedProjectPaths": [
+        "Platformer Art Complete Pack/Base pack/Tiles",
+        "Platformer Art Complete Pack",
+        ".",
+        "Platformer Art Complete Pack/Base pack"
     ],
     "fileStates": {
         "Lab043024.tsj": {
-            "dynamicWrapping": true
+            "dynamicWrapping": true,
+            "scaleInDock": 0.06,
+            "scaleInEditor": 0.12
         },
         "untitled.tmj": {
             "scale": 0.185546875,
-            "selectedLayer": 0,
+            "selectedLayer": 1,
             "viewCenter": {
-                "x": 962.0210526315789,
-                "y": 644.042105263158
+                "x": 1347.3684210526317,
+                "y": 1021.3052631578948
             }
         }
     },
@@ -25,10 +31,13 @@
     "map.tileHeight": 64,
     "map.tileWidth": 64,
     "openFiles": [
+        "Lab043024.tsj",
+        "untitled.tmj"
     ],
     "project": "Lab0430.tiled-project",
     "property.type": "string",
     "recentFiles": [
+        "Lab043024.tsj",
         "untitled.tmj"
     ],
     "tileset.lastUsedFormat": "json",
