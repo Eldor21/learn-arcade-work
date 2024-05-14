@@ -15,17 +15,30 @@ class Rocket:
         self.image.draw()
 
     def update(self):
+        # Update position based on movement speeds
         self.image.center_x += self.image.change_x
         self.image.center_y += self.image.change_y
-        self.image.change_x = 0
-        self.image.change_y = 0
+
+        # Optionally, reset movement after boundary checks
+        # Check and constrain the rocket within screen boundaries
+        if self.image.center_x < 0:
+            self.image.center_x = 0
+        elif self.image.center_x > SCREEN_WIDTH:
+            self.image.center_x = SCREEN_WIDTH
+
+        if self.image.center_y < 0:
+            self.image.center_y = 0
+        elif self.image.center_y > SCREEN_HEIGHT:
+            self.image.center_y = SCREEN_HEIGHT
 
     def update_with_keyboard(self, key_list):
+        # Adjust movement based on keyboard input
         if key_list.get(arcade.key.UP, False):
             self.image.change_y = self.speed
         elif key_list.get(arcade.key.DOWN, False):
             self.image.change_y = -self.speed
         else:
+            # Only reset vertical movement if no vertical key is pressed
             self.image.change_y = 0
 
         if key_list.get(arcade.key.LEFT, False):
@@ -33,11 +46,14 @@ class Rocket:
         elif key_list.get(arcade.key.RIGHT, False):
             self.image.change_x = self.speed
         else:
+            # Only reset horizontal movement if no horizontal key is pressed
             self.image.change_x = 0
 
     def update_with_mouse(self, x, y):
+        # Directly set the position from mouse input
         self.image.center_x = x
         self.image.center_y = y
+
 
 # ====================================== Moving Ball =============================>
 
