@@ -54,29 +54,53 @@ def main():
         if len(command) == 1:
             if command[0] == 'n':
                 next_room = room_list[current_room].north
+                if next_room is None:
+                    print("You can't go that way.")
+                else:
+                    current_room = next_room
             elif command[0] == 'e':
                 next_room = room_list[current_room].east
+                if next_room is None:
+                    print("You can't go that way.")
+                else:
+                    current_room = next_room
             elif command[0] == 's':
                 next_room = room_list[current_room].south
+                if next_room is None:
+                    print("You can't go that way.")
+                else:
+                    current_room = next_room
             elif command[0] == 'w':
                 next_room = room_list[current_room].west
+                if next_room is None:
+                    print("You can't go that way.")
+                else:
+                    current_room = next_room
             elif command[0] == 'u':
                 next_room = room_list[current_room].up
+                if next_room is None:
+                    print("You can't go that way.")
+                else:
+                    current_room = next_room
             elif command[0] == 'd':
                 next_room = room_list[current_room].down
+                if next_room is None:
+                    print("You can't go that way.")
+                else:
+                    current_room = next_room
             elif command[0] == 'q':
                 print("Goodbye!")
                 done = True
-                continue
+            elif command[0] == 'inventory':
+                has_items = False
+                for item in item_list:
+                    if item.room == -1:
+                        print(f"You have a {item.name}.")
+                        has_items = True
+                if not has_items:
+                    print("You are carrying nothing.")
             else:
                 print("I don't understand that command.")
-                continue
-
-            if next_room is None:
-                print("You can't go that way.")
-            else:
-                current_room = next_room
-
         elif len(command) > 1:
             cmd, item_name = command[0], " ".join(command[1:])
             if cmd == "get":
@@ -89,16 +113,9 @@ def main():
                         break
                 if not found:
                     print("You can't find that here.")
-            elif cmd[0] == "inventory":
-                has_items = False
-                for item in item_list:
-                    if item.room == -1:
-                        print(f"You have a {item.name}.")
-                        has_items = True
-                if not has_items:
-                    print("You are carrying nothing.")
             else:
                 print("I don't understand that command")
+
         if all(item.room == -1 for item in item_list):  # Check if all items are collected
             print("Congratulations! You have found all the items. Game Over!")
             break
